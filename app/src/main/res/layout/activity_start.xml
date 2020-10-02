@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/spell"
+        tools:context=".Start" android:orientation="vertical" android:gravity="center|top">
+
+    <EditText
+            android:text="Write Your Nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Nickname"
+            android:textSize="18sp" tools:layout_editor_absoluteY="70dp" tools:layout_editor_absoluteX="88dp"
+            tools:ignore="MissingConstraints"
+            android:background="@android:color/holo_red_dark"
+            android:layout_margin="50dp" android:autofillHints="" />
+    <TextView
+            android:text="Chose Your Character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            android:textSize="24sp" tools:layout_editor_absoluteY="197dp" tools:layout_editor_absoluteX="88dp"
+            tools:ignore="MissingConstraints" android:layout_margin="20dp"/>
+    <androidx.gridlayout.widget.GridLayout
+            android:layout_width="266dp"
+            android:layout_height="246dp" tools:layout_editor_absoluteY="292dp" tools:layout_editor_absoluteX="72dp"
+            app:columnCount="2" tools:ignore="MissingConstraints" app:rowCount="2" >
+
+        <ImageButton
+                android:layout_width="134dp"
+                android:layout_height="126dp"
+                app:layout_row="0"
+                app:layout_column="0"
+                android:background="@drawable/player3"
+                android:id="@+id/upleft" android:contentDescription="TODO"/>
+        <ImageButton
+                android:layout_width="134dp"
+                android:layout_height="120dp"
+                app:layout_row="1"
+                android:background="@drawable/player3"
+                app:layout_column="0" android:id="@+id/downleft"/>
+        <ImageButton
+                android:layout_width="133dp"
+                android:layout_height="126dp"
+                android:background="@drawable/player3"
+                app:layout_row="0"
+                app:layout_column="1" android:id="@+id/upright"/>
+        <ImageButton
+                android:layout_width="135dp"
+                android:layout_height="118dp"
+                android:background="@drawable/player3"
+                android:id="@+id/downright" app:layout_row="1" app:layout_column="1"/>
+    </androidx.gridlayout.widget.GridLayout>
+    <Button
+            android:text="Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Start"
+            android:textSize="24sp" tools:layout_editor_absoluteY="608dp" tools:layout_editor_absoluteX="156dp"
+            tools:ignore="MissingConstraints" android:layout_margin="20dp"/>
+
+
+</LinearLayout>
